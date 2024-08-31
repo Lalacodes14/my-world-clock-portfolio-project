@@ -4,10 +4,25 @@ function updateTime() {
   if (cairoElement) {
     let cairoDateElement = cairoElement.querySelector(".date");
     let cairoTimeElement = cairoElement.querySelector(".time");
-    let cairoTime = moment().tz("Egypt/Cairo");
+    let cairoTime = moment().tz("Africa/Cairo");
 
     cairoDateElement.innerHTML = cairoTime.format("MMMM	Do YYYY");
-    cairoElement.innerHTML = cairoTime.format("h:mm:ss [<small>]A[</small>]");
+    cairoTimeElement.innerHTML = cairoTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Tanzania
+  let tanzaniaElement = document.querySelector("#tanzania");
+  if (tanzaniaElement) {
+    let tanzaniaDateElement = tanzaniaElement.querySelector(".date");
+    let tanzaniaTimeElement = tanzaniaElement.querySelector(".time");
+    let tanzaniaTime = moment().tz("Africa/Dar_es_Salaam");
+
+    tanzaniaDateElement.innerHTML = tanzaniaTime.format("MMMM	Do YYYY");
+    tanzaniaTimeElement.innerHTML = tanzaniaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
 
   // Lusaka
