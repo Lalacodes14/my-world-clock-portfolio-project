@@ -25,11 +25,11 @@ function updateTime() {
     );
   }
 
-  // Algiers
+  // Accra
   let accraElement = document.querySelector("#accra");
   if (accraElement) {
-    let accraDateElement = algiersElement.querySelector(".date");
-    let accraTimeElement = algiersElement.querySelector(".time");
+    let accraDateElement = accraElement.querySelector(".date");
+    let accraTimeElement = accraElement.querySelector(".time");
     let accraTime = moment().tz("Africa/Accra");
 
     accraDateElement.innerHTML = accraTime.format("MMMM	Do YYYY");
