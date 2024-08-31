@@ -26,14 +26,14 @@ function updateTime() {
   }
 
   // Algiers
-  let algiersElement = document.querySelector("#algiers");
-  if (algiersElement) {
-    let algiersDateElement = algiersElement.querySelector(".date");
-    let algiersTimeElement = algiersElement.querySelector(".time");
-    let algiersTime = moment().tz("Africa/Algiers");
+  let accraElement = document.querySelector("#accra");
+  if (accraElement) {
+    let accraDateElement = algiersElement.querySelector(".date");
+    let accraTimeElement = algiersElement.querySelector(".time");
+    let accraTime = moment().tz("Africa/Accra");
 
-    algiersDateElement.innerHTML = algiersTime.format("MMMM	Do YYYY");
-    algiersTimeElement.innerHTML = algiersTime.format(
+    accraDateElement.innerHTML = accraTime.format("MMMM	Do YYYY");
+    accraTimeElement.innerHTML = accraTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
