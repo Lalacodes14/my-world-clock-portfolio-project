@@ -1,13 +1,13 @@
 function updateTime() {
   // Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  let cairoElement = document.querySelector("#cairo");
+  if (cairoElement) {
+    let cairoDateElement = cairoElement.querySelector(".date");
+    let cairoTimeElement = cairoElement.querySelector(".time");
+    let cairoTime = moment().tz("America/Cairo");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM	Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    cairoDateElement.innerHTML = cairoTime.format("MMMM	Do YYYY");
+    cairoTimeElement.innerHTML = cairoTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -25,14 +25,14 @@ function updateTime() {
   }
 
   // Paris
-  let parisElement = document.querySelector("#paris");
-  if (parisElement) {
-    let parisDateElement = parisElement.querySelector(".date");
-    let parisTimeElement = parisElement.querySelector(".time");
-    let parisTime = moment().tz("Europe/Paris");
+  let lusakaElement = document.querySelector("#lusaka");
+  if (lusakaElement) {
+    let lusakaDateElement = lusakaElement.querySelector(".date");
+    let lusakaTimeElement = lusakaElement.querySelector(".time");
+    let lusakaTime = moment().tz("Africa/Lusaka");
 
-    parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
-    parisTimeElement.innerHTML = parisTime.format(
+    lusakaDateElement.innerHTML = lusakaTime.format("MMMM	Do YYYY");
+    lusakaTimeElement.innerHTML = lusakaTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
