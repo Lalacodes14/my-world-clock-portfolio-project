@@ -24,7 +24,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  // Paris
+  // Tanzania
   let tanzaniaElement = document.querySelector("#tanzania");
   if (tanzaniaElement) {
     let tanzaniaDateElement = tanzaniaElement.querySelector(".date");
