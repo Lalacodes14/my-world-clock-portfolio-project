@@ -11,6 +11,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
   // Tanzania
   let tanzaniaElement = document.querySelector("#tanzania");
   if (tanzaniaElement) {
