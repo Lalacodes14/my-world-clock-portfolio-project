@@ -25,15 +25,15 @@ function updateTime() {
     );
   }
 
-  // Lusaka
-  let lusakaElement = document.querySelector("#lusaka");
-  if (lusakaElement) {
-    let lusakaDateElement = lusakaElement.querySelector(".date");
-    let lusakaTimeElement = lusakaElement.querySelector(".time");
-    let lusakaTime = moment().tz("Africa/Lusaka");
+  // Algiers
+  let algiersElement = document.querySelector("#algiers");
+  if (algiersElement) {
+    let algiersDateElement = algiersElement.querySelector(".date");
+    let algiersTimeElement = algiersElement.querySelector(".time");
+    let algiersTime = moment().tz("Africa/Algiers");
 
-    lusakaDateElement.innerHTML = lusakaTime.format("MMMM	Do YYYY");
-    lusakaTimeElement.innerHTML = lusakaTime.format(
+    algiersDateElement.innerHTML = algiersTime.format("MMMM	Do YYYY");
+    algiersTimeElement.innerHTML = algiersTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
