@@ -1,13 +1,13 @@
 function updateTime() {
-  // Cairo
-  let cairoElement = document.querySelector("#cairo");
-  if (cairoElement) {
-    let cairoDateElement = cairoElement.querySelector(".date");
-    let cairoTimeElement = cairoElement.querySelector(".time");
-    let cairoTime = moment().tz("Egypt/Cairo");
+  // Kenya
+  let luandaElement = document.querySelector("#luanda");
+  if (luandaElement) {
+    let luandaDateElement = luandaElement.querySelector(".date");
+    let luandaTimeElement = luandaElement.querySelector(".time");
+    let luandaTime = moment().tz("Africa/Luanda");
 
-    cairoDateElement.innerHTML = cairoTime.format("MMMM	Do YYYY");
-    cairoTimeElement.innerHTML = cairoTime.format(
+    luandaDateElement.innerHTML = luandaTime.format("MMMM	Do YYYY");
+    luandaTimeElement.innerHTML = luandaTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
