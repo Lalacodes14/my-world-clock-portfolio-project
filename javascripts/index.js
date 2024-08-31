@@ -1,5 +1,5 @@
 function updateTime() {
-  // Los Angeles
+  // Cairo
   let cairoElement = document.querySelector("#cairo");
   if (cairoElement) {
     let cairoDateElement = cairoElement.querySelector(".date");
@@ -24,7 +24,7 @@ function updateTime() {
     );
   }
 
-  // Paris
+  // Lusaka
   let lusakaElement = document.querySelector("#lusaka");
   if (lusakaElement) {
     let lusakaDateElement = lusakaElement.querySelector(".date");
