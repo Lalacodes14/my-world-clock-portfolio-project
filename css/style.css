@@ -26,6 +26,10 @@ select {
 a {
   color: rgb(250, 223, 180);
 }
+
+em {
+  color: rgb(114, 93, 73);
+}
 .container {
   max-width: 600px;
   margin: 60px auto;
