@@ -11,6 +11,18 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  // Tanzania
+  let tanzaniaElement = document.querySelector("#tanzania");
+  if (tanzaniaElement) {
+    let tanzaniaDateElement = tanzaniaElement.querySelector(".date");
+    let tanzaniaTimeElement = tanzaniaElement.querySelector(".time");
+    let tanzaniaTime = moment().tz("Africa/Tanzania");
+
+    tanzaniaDateElement.innerHTML = tanzaniaTime.format("MMMM	Do YYYY");
+    tanzaniaTimeElement.innerHTML = tanzaniaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 
   // Paris
   let parisElement = document.querySelector("#paris");
@@ -21,18 +33,6 @@ function updateTime() {
 
     parisDateElement.innerHTML = parisTime.format("MMMM	Do YYYY");
     parisTimeElement.innerHTML = parisTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
-  }
-  // Tanzania
-  let tanzaniaElement = document.querySelector("#tanzania");
-  if (tanzaniaElement) {
-    let tanzaniaDateElement = tanzaniaElement.querySelector(".date");
-    let tanzaniaTimeElement = tanzaniaElement.querySelector(".time");
-    let tanzaniaTime = moment().tz("Africa/Dar_es_Salaam");
-
-    tanzaniaDateElement.innerHTML = tanzaniaTime.format("MMMM	Do YYYY");
-    tanzaniaTimeElement.innerHTML = tanzaniaTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -56,7 +56,7 @@ function updateCity(event) {
     "A"
   )}</small></div>
   </div>
-  <a href="/">All Cities</a>
+  <a href="/">All cities</a>
   `;
 }
 
