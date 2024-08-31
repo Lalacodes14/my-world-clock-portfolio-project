@@ -26,9 +26,6 @@ select {
 a {
   color: rgb(250, 223, 180);
 }
-.link {
-  color: #967c63;
-}
 .container {
   max-width: 600px;
   margin: 60px auto;
