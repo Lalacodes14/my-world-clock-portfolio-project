@@ -23,6 +23,9 @@ select {
   padding: 10px;
 }
 
+a {
+  color: rgb(250, 223, 180);
+}
 .container {
   max-width: 600px;
   margin: 60px auto;
