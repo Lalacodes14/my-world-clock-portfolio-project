@@ -24,6 +24,18 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  // Paris
+  let tanzaniaElement = document.querySelector("#tanzania");
+  if (tanzaniaElement) {
+    let tanzaniaDateElement = tanzaniaElement.querySelector(".date");
+    let tanzaniaTimeElement = tanzaniaElement.querySelector(".time");
+    let tanzaniaTime = moment().tz("Africa/Tanzania");
+
+    tanzaniaDateElement.innerHTML = tanzaniaTime.format("MMMM	Do YYYY");
+    tanzaniaTimeElement.innerHTML = tanzaniaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
