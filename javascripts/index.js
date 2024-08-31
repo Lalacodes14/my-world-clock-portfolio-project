@@ -12,6 +12,19 @@ function updateTime() {
     );
   }
 
+  // Tanzania
+  let tanzaniaElement = document.querySelector("#tanzania");
+  if (tanzaniaElement) {
+    let tanzaniaDateElement = tanzaniaElement.querySelector(".date");
+    let tanzaniaTimeElement = tanzaniaElement.querySelector(".time");
+    let tanzaniaTime = moment().tz("Africa/Dar_es_Salaam");
+
+    tanzaniaDateElement.innerHTML = tanzaniaTime.format("MMMM	Do YYYY");
+    tanzaniaTimeElement.innerHTML = tanzaniaTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
   // Lusaka
   let lusakaElement = document.querySelector("#lusaka");
   if (lusakaElement) {
